@@ -5,6 +5,7 @@ import router from './router'
 import installElementPlus from './plugins/element'
 import './assets/css/icon.css'
 const app = createApp(App)
+
 installElementPlus(app)
 app.use(createPinia())
     .use(router)

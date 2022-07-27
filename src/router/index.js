@@ -25,6 +25,13 @@ const routes = [
                 },
                 component: () => import ( /* webpackChunkName: "table" */ "../views/BaseTable.vue")
             }, {
+                path: "/complexTable",
+                name: "complexTable",
+                meta: {
+                    title: '复杂表格'
+                },
+                component: () => import ( /* webpackChunkName: "table" */ "../views/complexTable.vue")
+            }, {
                 path: "/charts",
                 name: "basecharts",
                 meta: {

@@ -49,6 +49,11 @@ export default {
                 title: "基础表格",
             },
             {
+                icon: "el-icon-lx-cascades",
+                index: "/complexTable",
+                title: "复杂表格",
+            },
+            {
                 icon: "el-icon-lx-copy",
                 index: "/tabs",
                 title: "tab选项卡",
@@ -121,6 +126,7 @@ export default {
 
         const route = useRoute();
         const onRoutes = computed(() => {
+            console.log('当前路由',route.path)
             return route.path;
         });
 
